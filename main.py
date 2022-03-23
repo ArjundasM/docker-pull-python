@@ -9,7 +9,7 @@ file_location='/tmp/sample'
 
 #Get environment variables
 bucket_name = os.getenv('BUCKET_NAME')
-file_name   = os.getenv('FILE_NAME')
+file_name   = os.getenv('FILE_PATH')
 
 #Creating AWS S3 client
 s3 = boto3.client('s3')
