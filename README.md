@@ -20,7 +20,21 @@ cd docker-pull-python
 python3 -m pip install -r requirements.txt
 ```
 
-3.Run the application
+3.Update and export following environtment variables
+```
+export AWS_ACCESS_KEY_ID=<aws account access key>
+```
+```
+export AWS_SECRET_ACCESS_KEY=<aws account secret key>
+```
+```
+export BUCKET_NAME=<s3 bucket name>
+```
+```
+export FILE_NAME=<s3 object name>
+```
+
+4.Run the application
 
 ```
 python3 main.py
