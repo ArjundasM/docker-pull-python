@@ -33,8 +33,8 @@ export BUCKET_NAME=<s3 bucket name>
 ```
 export FILE_PATH=<s3 object path>
 ```
-e.g., S3 URL=s3://bucketname/folder1/file, then FILE_PATH=folder1/file
-      S3 URL=s3://bucketname/file, then FILE_PATH=file
+e.g., - S3 URL=s3://bucketname/folder1/file, then FILE_PATH=folder1/file
+      - S3 URL=s3://bucketname/file, then FILE_PATH=file
 
 4.Run the script
 
