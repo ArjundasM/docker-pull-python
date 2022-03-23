@@ -2,6 +2,7 @@ import fileinput
 import boto3
 import docker
 import os
+from botocore.exceptions import ClientError
 
 #Downloading location
 file_location='/tmp/sample'
@@ -14,7 +15,11 @@ file_name   = os.getenv('FILE_NAME')
 s3 = boto3.client('s3')
 
 #Downloading file from s3
-#s3.download_file(bucket_name, file_name, file_location)
+try:
+  s3.download_file(bucket_name, file_name, file_location)
+except ClientError as e:
+  print(e)
+  quit()
 
 #Remove empty lines, if any
 for line in fileinput.FileInput(file_location,inplace=1):
@@ -46,4 +51,5 @@ def dockerPull(name):
     except docker.errors.APIError as e:
       print(e)
 
+#call docker pull function
 dockerPull(value)
