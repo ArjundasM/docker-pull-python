@@ -31,8 +31,9 @@ export AWS_SECRET_ACCESS_KEY=<aws account secret key>
 export BUCKET_NAME=<s3 bucket name>
 ```
 ```
-export FILE_NAME=<s3 object name>
+export FILE_PATH=<s3 object path>
 ```
+Example: If full s3 url of your object is : s3://bucketname/folder1/file, then FILE_PATH=folder/file
 
 4.Run the application
 
