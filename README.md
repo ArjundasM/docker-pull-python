@@ -23,7 +23,7 @@ python3 -m pip install -r requirements.txt
 
 3.Update and export following environtment variables
 ```
-export **AWS_ACCESS_KEY_ID**=<aws account access key>
+export AWS_ACCESS_KEY_ID=<aws account access key>
 ```
 ```
 export AWS_SECRET_ACCESS_KEY=<aws account secret key>
